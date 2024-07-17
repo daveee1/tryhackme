@@ -1,0 +1,64 @@
+
+linux
+	whoami
+	echo
+	find -name name_file.txt
+	find -name *.txt
+	grep
+		esempio    	wc -l access.log
+		ottengo 	244 access.log, 244 entrate
+		voglio vedeer solo riguardo un indirizzo IP specifico
+				grep "IP" access.log 
+	& 	esegui comanid in background
+	&& 	cobina piu comandi 
+	> 	redirector: prendiamo il suo output e lo usiamo da un'altra parte
+		esempio  	echo hey > welcome
+				creiamo un file welcome con scritto dentro hey
+	>> 	uguale a > ma aggiunge l'output anziche rimpiazzarlo 
+		esempio 	voglio aggiungere al file welcome, dopo hey, la scritta ha
+				echo ha >> welcome 
+		
+				echo ha > welcome elimina hey à
+	
+	ssh nomeaccount@IPmacchina
+	touch	
+	su 	switch user
+	
+
+common dir
+	etc	file del SO, contiene anche password degli utenti per login
+	var 	variable data di frequente accesso es var\log
+	tmp 	dati temporanei, accesso una o due volte
+
+
+
+wget 	to download file via web
+scp 	transefrring fles from your host or viceversa: like cp but to make communicate two computers
+python3 -m http.server
+
+
+processes
+	ps
+	top
+	kill
+		sigterm
+			kill process but let it cleanup
+		sigkill
+			kill
+		sigstop
+			stop or suspend a process
+	systemd
+		process of ubuntu
+	systemctl [option] [service]
+		es systemctl start apache2
+		serve a interagire con processi systemd 
+		options:
+			start
+			stop
+			enable 
+			disable
+	ctrl+z 
+		background process
+	fg
+		per riportare un processo da background a foreground
+	
